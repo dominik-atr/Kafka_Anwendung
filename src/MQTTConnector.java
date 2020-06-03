@@ -16,7 +16,7 @@ public class MQTTConnector {
 
 
     private final static String MQTT_SERVER_URL = "tcp://localhost:1883",
-            MQTT_CLIENT_ID = "KafkaConnector",
+            MQTT_CLIENT_ID = "MQTTKafkaConnector",
             KAFKA_BROKER = "localhost:9092";
 
 
