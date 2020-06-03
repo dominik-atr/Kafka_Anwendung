@@ -17,6 +17,6 @@ Verbindet sich über localhost:9092 mit dem Cluster.
 Leitet alle Nachrichten eines MQTT Brokers an ein Kafka Cluster weiter.
 Verbindet sich über localhost:9092 mit Kafka, über localhost:1883 mit
 MQTT.
-Topics der Form mqtt.<name> werden zu kafka.<name> abgeändert.
+Topics der Form mqtt.name werden zu kafka.name abgeändert.
 In Kafka bekommen die Nachrichten als Key den aktuellen Zeistempel
 in der Form "yyyy/MM/dd.HH:mm:ss".
