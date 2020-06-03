@@ -7,5 +7,27 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/org.eclipse.paho.client.mqttv3-1.2.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$USER_HOME$/Downloads/kafka_2.12-2.4.0/libs" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$USER_HOME$/Downloads/kafka_2.12-2.4.0/libs" />
+        </SOURCES>
+        <jarDirectory url="file://$USER_HOME$/Downloads/kafka_2.12-2.4.0/libs" recursive="false" />
+        <jarDirectory url="file://$USER_HOME$/Downloads/kafka_2.12-2.4.0/libs" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
   </component>
 </module>
