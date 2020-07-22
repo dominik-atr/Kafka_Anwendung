@@ -3,7 +3,6 @@ import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.eclipse.paho.client.mqttv3.*;
-import java.text.SimpleDateFormat;
 import java.util.Properties;
 
 
@@ -42,8 +41,7 @@ public class MQTTConnector {
                 newTopic = topic.replaceFirst("mqtt","kafka");
             }
 
-            String date = new SimpleDateFormat("yyyy/MM/dd.HH:mm:ss").format(new java.util.Date());
-            prod.send(new ProducerRecord<String, String>(newTopic, date, msg.toString()));
+            prod.send(new ProducerRecord<String, String>(newTopic, "key", msg.toString()));
 
         };
     }
